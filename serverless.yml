@@ -1,0 +1,14 @@
+service: exiftool-ruby-lambda-layer
+
+provider:
+  name: aws
+  region: eu-west-1
+  runtime: ruby2.5
+
+layers:
+  libvips:
+    path: layer
+    description: exiftool with ruby2.5
+    compatibleRuntimes:
+      - ruby2.5
+    licenseInfo: MIT License
