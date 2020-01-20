@@ -6,8 +6,9 @@ provider:
   runtime: ruby2.5
 
 layers:
-  libvips:
+  exiftool:
     path: layer
+    include: ./**
     description: exiftool with ruby2.5
     compatibleRuntimes:
       - ruby2.5
